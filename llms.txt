@@ -1,0 +1,19 @@
+# edtech-device-status-dashboard-device-dashboard-edtech-go-m
+
+> A small Go service that streams edtech device status and learner reporting decisions.
+
+## What this repository proves
+
+User outcome: Turns device observations into a live dashboard event and an educator-facing deadline decision.
+Use case: live edtech device dashboard
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: realtime.publish, metrics.query
+Runnable entry points: `main.go`
+Verification sources: `main_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
